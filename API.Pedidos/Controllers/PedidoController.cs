@@ -1,10 +1,12 @@
 ﻿using API.Pedidos.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Pedidos.Controllers
 {
     [Route("[controller]/[action]")]
     [ApiController]
+    [Authorize]
     public class PedidoController : ControllerBase
     {
         [HttpGet]
